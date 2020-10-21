@@ -23,16 +23,16 @@ public GameObject foodProjectile;
      transform.Translate(Vector3.right * Time.deltaTime * horizontalInput * speed);
      
    // Constrains  Players Movement to the left at -10 
-     if(transform.position.x < -xRange)
+        if(transform.position.x < -xRange)
     {
-       transform.position = new Vector3(-xRange, transform.position.y,transform.position.z);
+        transform.position = new Vector3(-xRange, transform.position.y,transform.position.z);
     }
     
-     if(transform.position.x < xRange)
+        if(transform.position.x < xRange)
      {
         transform.position = new Vector3(xRange,transform.position.y,transform.position.z);
      }
-     if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space))
      {
         Instantiate(foodProjectile, transform.position, foodProjectile.transform.rotation);
      }

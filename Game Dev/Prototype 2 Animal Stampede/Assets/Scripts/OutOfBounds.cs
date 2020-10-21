@@ -25,6 +25,7 @@ public class OutOfBounds : MonoBehaviour
       {
          Debug.Log("GAME OVER");
          Destroy(gameObject);
+         Time.timeScale = 0;
       }
     }
 }
