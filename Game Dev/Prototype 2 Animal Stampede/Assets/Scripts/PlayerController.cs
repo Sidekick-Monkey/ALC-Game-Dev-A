@@ -21,8 +21,7 @@ public GameObject foodProjectile;
     
      horizontalInput = Input.GetAxis("Horizontal");
      transform.Translate(Vector3.right * Time.deltaTime * horizontalInput * speed);
-     
-   // Constrains  Players Movement to the left at -10 
+      
         if(transform.position.x < -xRange)
     {
         transform.position = new Vector3(-xRange, transform.position.y,transform.position.z);
